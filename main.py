@@ -22,6 +22,7 @@ dolares_usuario = 0
 def main():
     tipo_moneda_usuario = input("Que moneda te gustaria cambiar | 1 - Peso Colombiano | 2 - Peso Argentino | 3 - Peso Chileno  ")
     dolares_comprar = input("Cuantos dolares te gustaria comprar? ")
+
     if tipo_moneda_usuario == 1:
         dolares_usuario = peso_colombiano * dolares_comprar
         print("Necesitas " + str(dolares_usuario) + " Pesos")
