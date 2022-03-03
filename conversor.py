@@ -25,7 +25,6 @@ def main():
     if tipo_moneda_usuario == 1:
         dolares_usuario = peso_colombiano * dolares_comprar
         print("Necesitas " + str(dolares_usuario) + " Pesos")
-        #print("Necesitas " + str(dolares_usuario) + " Pesos")
 
     elif tipo_moneda_usuario == 2:
         dolares_usuario = peso_argentino * dolares_comprar         
