@@ -44,21 +44,24 @@ def postorder(node):
 
 
 def main():
-    time.sleep(3)
-    print("\n¿Como deseas recorrer el Arbol Binario?\n")
-    tree_option = int(input("\t 1- Para recorrido en Anticipo. 2- Para recorrido en Orden. 3- Para recorrido Posterior al Pedido. 4- Para salir del Programa"))
-    
+    #time.sleep(3)
+    print("\n¿How do you choose to travel the Binary Tree?\n")
+    tree_option = int(input("\t 1- For tour in Advance. 2- For tour in Order. 3- For post-order tour. 4- To exit\n"))
     if tree_option == 1:
+        print("Results of the Binary Tree\n")
         print(preorder(node))
     
     if tree_option == 2:
+        print("Results of the Binary Tree\n")
         print(inorder(node))
     
     if tree_option == 3:
+        print("Results of the Binary Tree\n")
         print(postorder(node))
 
     if tree_option == 4:
-        os.exit()
+        print("You chose to Exit")
+        sys.exit()
 
 if __name__ == "__main__":
     main()
