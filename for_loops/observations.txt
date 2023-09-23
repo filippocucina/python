@@ -1,0 +1,4 @@
+import getopt
+
+this module provides two fuctions and an exception
+getopt.getopt(args, short_opts, long_opts=[])
