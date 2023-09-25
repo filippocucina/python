@@ -1,13 +1,13 @@
 import sys, getopt
 
-def full_name():
-    first_name = None
-    last_name = None
+def full_name() -> None:
+    first_name: str = None
+    last_name: str = None
 
-    argv = sys.argv[1:]
+    argv: str = sys.argv[1:]
 
     try:
-        opts, args = getopt.getopt(argv, "f:l:", ["first_name =", "last_name ="])
+        opts, args = getopt.getopt(argv, "f:l:", ["nombre=", " apellido="])
 
 
     except:
@@ -16,9 +16,9 @@ def full_name():
 
 
     for opt, arg in opts:
-        if opt in ['-f', '--first_name']:
+        if opt in ['-f', 'nombre']:
             first_name = arg
-        elif opt in ['-l', '--last_name']:
+        elif opt in ['-l', 'apellido']:
             last_name = arg
 
     print(str(first_name) + " " + str(last_name))
