@@ -11,3 +11,5 @@ print(math.comb(5, 4))
 print(math.comb(3, 5)) #Evaluates to zero when k > n  math.comb(n , k)
 print(math.comb(3, 2))
 print(math.fabs(-30))
+
+print(int(math.pow(2, 2)))
