@@ -6,11 +6,11 @@ def triangle_perimeter(a, b, c) -> int:
 
 
 def triangle_area(a, b, c) -> int:
-    s = (a + b + c) / 2 #semiperimeter
-    diference1 = s - a
-    diference2 = s - b
-    diference3 = s - c
-    heron_formula = s * diference1 * diference2 * diference3
+    semiperimeter = (a + b + c) / 2
+    diference1 = semiperimeter - a
+    diference2 = semiperimeter - b
+    diference3 = semiperimeter - c
+    heron_formula = semiperimeter * diference1 * diference2 * diference3
 
     return math.floor(math.sqrt(heron_formula))
     
